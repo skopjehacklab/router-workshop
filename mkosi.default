@@ -4,7 +4,7 @@ Distribution=arch
 [Output]
 Format=raw_gpt
 Bootable=yes
-Output=rooter.raw
+Output=rooter-base.img
 
 [Partitions]
 RootSize=2G

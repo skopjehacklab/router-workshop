@@ -8,7 +8,7 @@ if ! [[ $ID =~ ^[0-9]+$ ]]; then
     exit 1
 fi
 
-BASE_IMG=rooter.raw
+BASE_IMG=rooter-base.img
 IMG=rooter${ID}.img
 TAP=vtap${ID}
 MAC=c8:5b:76:fd:3f:$(printf %02x $ID)

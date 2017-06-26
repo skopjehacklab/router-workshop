@@ -31,7 +31,7 @@ sudo ip addr add dev br0 192.168.200.254/24
 sudo ip link set up dev br0
 ```
 
-To create the base image (`rooter.raw`) just:
+To create the base image (`rooter-base.img`) just:
 ```
 sudo mkosi
 ```
