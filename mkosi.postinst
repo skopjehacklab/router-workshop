@@ -1,6 +1,7 @@
 #! /bin/sh
 
 systemctl enable sshd systemd-networkd-wait-online keepalived bird
+pacman -Rdd --noconfirm perl
 
 # the following is added by mkosi, but remove it, since we take control of the network
 rm /etc/systemd/network/all-ethernet.network
