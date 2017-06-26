@@ -19,8 +19,8 @@ Routers have 2 interfaces each, and the second interfaces are bridged together t
 
 # Prepare the host
 
-Currently on ArchLinux as a host you need to install the `mkosi-git` from AUR and `arch-install-scripts` (and
-`iproute2` for host setup). For other hosts see the docs at [mkosi](https://github.com/systemd/mkosi).
+Currently on ArchLinux as a host you need to install the `mkosi-git` from AUR and `ovmf`, `arch-install-scripts` (and
+`iproute2` for host setup) packages. For other hosts see the docs at [mkosi](https://github.com/systemd/mkosi).
 
 
 ```
