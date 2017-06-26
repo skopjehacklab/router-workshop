@@ -1,0 +1,21 @@
+[Distribution]
+Distribution=arch
+
+[Output]
+Format=raw_gpt
+Bootable=yes
+Output=rooter.raw
+
+[Partitions]
+RootSize=2G
+ESPSize=128M
+
+[Packages]
+Cache=/var/cache/pacman/pkg/
+Packages=
+        polkit
+        openssh
+        bird
+        keepalived
+        iptables
+        tcpdump
