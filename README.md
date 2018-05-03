@@ -50,4 +50,3 @@ each will create its own snapshot image `rooter1.img`, `rooter2.img` …
 * bgp
 * quagga and other routers interoperability
 * option for volatile snapshots
-* systemd 233 for updated policies so that UseHostname works

@@ -2,4 +2,8 @@
 Name=ens3
 
 [Network]
+Description=QEMU User Network
 DHCP=yes
+
+[DHCP]
+UseHostname=yes
