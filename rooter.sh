@@ -15,7 +15,7 @@ MAC=c8:5b:76:fd:3f:$(printf %02x $ID)
 NAME=rooter${ID}
 MEM=512
 BRIDGE=br0
-BIOS=/usr/share/ovmf/ovmf_code_x64.bin
+BIOS=/usr/share/ovmf/x64/OVMF_CODE.fd
 
 
 if ! [[ -e "$IMG" ]]; then
