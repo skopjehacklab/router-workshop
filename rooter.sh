@@ -16,14 +16,14 @@ NAME=rooter${ID}
 MEM=512
 BRIDGE=br0
 BIOS=/usr/share/ovmf/x64/OVMF_CODE.fd
-
+CURRENT_USER=`id -nu`
 
 if ! [[ -e "$IMG" ]]; then
     qemu-img create -f qcow2 -b "$BASE_IMG" "$IMG"
 fi
 
 
-sudo ip tuntap add mode tap user damjan name ${TAP}
+sudo ip tuntap add mode tap user ${CURRENT_USER} name ${TAP}
 sudo ip link set up dev ${TAP} master ${BRIDGE}
 
 
